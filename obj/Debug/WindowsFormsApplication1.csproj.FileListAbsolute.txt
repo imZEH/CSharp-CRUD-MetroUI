@@ -26,3 +26,6 @@ C:\Users\John\Desktop\CRUD C#\WindowsFormsApplication1\WindowsFormsApplication1\
 C:\Users\John\Desktop\CRUD C#\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\John\Desktop\CRUD C#\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\John\Desktop\CRUD C#\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.users.resources
+C:\Users\John\Desktop\CRUD C#\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\John\Desktop\CRUD C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\John\Desktop\CRUD C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
