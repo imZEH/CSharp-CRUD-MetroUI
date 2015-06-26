@@ -18,8 +18,8 @@ namespace WindowsFormsApplication1
             string connectionString = "SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
-            MySqlConnection connection = new MySqlConnection(connectionString);
-            return connection;
+            MySqlConnection conn = new MySqlConnection(connectionString);
+            return conn;
         }
     }
 }

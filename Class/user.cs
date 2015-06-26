@@ -8,6 +8,7 @@ namespace WindowsFormsApplication1.Class
 {
     public class user
     {
+        private int id;
         private String name;
         private String gender;
         private String age;
@@ -16,6 +17,18 @@ namespace WindowsFormsApplication1.Class
         private String password;
         private String userType;
 
+        public user(int id, String name, String gender, String age, String address, String username, String password, String userType)
+        {
+            this.id = id;
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+            this.address = address;
+            this.username = username;
+            this.password = password;
+            this.userType = userType;
+        }
+
         public user(string user, string pass, string userType)
         {
             this.username = user;
@@ -23,12 +36,13 @@ namespace WindowsFormsApplication1.Class
             this.userType = userType;
         }
 
-        public String Name{ get; set; }
-        public String Gender { get; set; }
-        public String Age { get; set; }
-        public String Address { get; set; }
-        public String Username { get; set; }
-        public String Password { get; set; }
-        public String UserType { get { return this.userType; } }
+        public int Id { get { return id; } }
+        public String Name { get { return this.name; } }
+        public String Gender { get { return this.gender; } }
+        public String Age { get { return this.age; } }
+        public String Address{ get { return address; } set { address = value; } }
+        public String Username { get { return username; } set { username = value; } }
+        public String Password { get { return password; } set { password = value; } }
+        public String UserType { get { return userType; } set { userType = value; } }
     }
 }

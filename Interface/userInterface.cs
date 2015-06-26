@@ -8,6 +8,7 @@ namespace WindowsFormsApplication1.Interface
 {
     interface userInterface
     {
-        void User(String name, String gender, String age, String address, String username, String password);
+        void UserInsert(String name, String gender, String age, String address, String username, String password);
+        void UserUpdate(int id, String name, String gender, String age, String address, String username, String password);
     }
 }

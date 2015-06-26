@@ -40,7 +40,7 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                MetroFramework.MetroMessageBox.Show(this, "Username and Password does not match", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this, "Username and Password does not match", "Error Connection", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

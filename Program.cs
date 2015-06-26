@@ -8,6 +8,10 @@ namespace WindowsFormsApplication1
 {
     static class Program
     {
+
+        public static int ID = 0;
+        public static String userType = "";
+        public static String Name = "";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
