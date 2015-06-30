@@ -45,13 +45,13 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEdit = new MetroFramework.Controls.MetroButton();
             this.btnDelete = new MetroFramework.Controls.MetroButton();
             this.pass = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.uname = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.userType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.userGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -286,6 +286,12 @@
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
+            // userType
+            // 
+            this.userType.HeaderText = "User Type";
+            this.userType.Name = "userType";
+            this.userType.ReadOnly = true;
+            // 
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
@@ -318,6 +324,7 @@
             this.btnDelete.UseCustomForeColor = true;
             this.btnDelete.UseSelectable = true;
             this.btnDelete.UseStyleColors = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // pass
             // 
@@ -386,12 +393,6 @@
             this.metroLabel6.UseCustomForeColor = true;
             this.metroLabel6.UseStyleColors = true;
             this.metroLabel6.UseWaitCursor = true;
-            // 
-            // userType
-            // 
-            this.userType.HeaderText = "User Type";
-            this.userType.Name = "userType";
-            this.userType.ReadOnly = true;
             // 
             // users
             // 

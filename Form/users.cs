@@ -29,7 +29,7 @@ namespace WindowsFormsApplication1
 
         public void getUserList()
         {
-            
+            sList.ForEach(i => Debug.Print("{0}\t", i));
             userList u = new userList();
             sList = u.getUsers();
             userGrid.Rows.Clear();
@@ -69,6 +69,14 @@ namespace WindowsFormsApplication1
             gender.Text = sList[i].Gender;
             uname.Text = sList[i].Username;
             pass.Text = sList[i].Password;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int rowIndex = userGrid.CurrentCell.RowIndex;
+            userImp u = new userImp();
+            u.UserDelete(sList[rowIndex].Id);
+            getUserList();
         }
     }
 }

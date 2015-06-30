@@ -62,5 +62,25 @@ namespace WindowsFormsApplication1.Implementation
                 MetroFramework.MetroMessageBox.Show(new users(), e.ToString(), "System Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void UserDelete(int id)
+        {
+            try
+            {
+                String query = "DELETE FROM user WHERE id=@id;";
+                conn = Connection.getMysqlConnection();
+                conn.Open();
+                MySqlCommand SQLCMD = new MySqlCommand(query, conn);
+                SQLCMD.Parameters.Add("@id", MySqlDbType.Int16).Value = id;
+                SQLCMD.ExecuteNonQuery();
+                conn.Close();
+                MetroFramework.MetroMessageBox.Show(new users(), "Information successfuly deleted", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception e)
+            {
+                
+                MetroFramework.MetroMessageBox.Show(new users(), e.ToString(), "System Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

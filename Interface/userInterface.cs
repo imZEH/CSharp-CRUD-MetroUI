@@ -10,5 +10,6 @@ namespace WindowsFormsApplication1.Interface
     {
         void UserInsert(String name, String gender, String age, String address, String username, String password);
         void UserUpdate(int id, String name, String gender, String age, String address, String username, String password);
+        void UserDelete(int id);
     }
 }
